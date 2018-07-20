@@ -15,13 +15,13 @@ service cloud.firestore {
     match /blips/{blip} {
       allow get: if true;
       allow list: if true;
-      allow write: if hasAnyRole(['admin', 'editor']);
+      allow write: if true;
     }
 
     match /blips/{blip}/changes/{entry} {
       allow get: if true;
       allow list: if true;
-      allow write: if hasAnyRole(['admin', 'editor']);
+      allow write: if true;
     }
     
     function isSignedIn() {
