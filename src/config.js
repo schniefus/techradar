@@ -1,4 +1,4 @@
-const {default: colors} = require('vuetify/es5/util/colors')
+const { default: colors } = require('vuetify/es5/util/colors')
 
 const config = { // needs to be ES6 module so it can be imported by webpack
   blips: {
@@ -10,7 +10,7 @@ const config = { // needs to be ES6 module so it can be imported by webpack
   },
   categories: ['Techniques', 'Tools', 'Platforms', 'Languages & Frameworks'], // quadrant 1-4
   states: ['Hold', 'Assess', 'Trial', 'Adopt'], // should be 0 - 3 for tech radar, 4 for in use, 5 for no longer in use
-  metaTitle: 'anoff\'s Techradar', // meta information title tag
+  metaTitle: 'Andreas\'s Techradar', // meta information title tag
   appTitle: 'Techradar DEMO', // title showing in the application titlebar
   editPermissions: user => true,
   routes: [ // configure name, permissions & viewports
